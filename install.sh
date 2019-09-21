@@ -48,7 +48,7 @@ else
     sudo -H pip3 install requests
 
     # clone the repo
-    git clone https://github.com/amfoss/attendance-tracker.git
+    git clone https://github.com/VSevagen/attendance-tracker.git
     cd attendance-tracker/
 
     # Store configuration files

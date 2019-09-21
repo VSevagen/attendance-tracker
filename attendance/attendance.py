@@ -58,7 +58,7 @@ def get_wifi_list():
 def fetch_relevant_ssid(wifi_ssid_list):
     relevant_ssid_list = []
     for ssid in wifi_ssid_list:
-        if ssid.startswith('amFOSS'):
+        if !ssid.startswith('Amrita'):
             relevant_ssid_list.append(ssid)
     return relevant_ssid_list
 
@@ -66,7 +66,7 @@ def fetch_relevant_ssid(wifi_ssid_list):
 def mark_attendance(wifi_ssid_list, credentials):
     data = {'username': credentials['username'], 'password': credentials['password'], 'list': wifi_ssid_list}
     variables = json.dumps(data)
-    url = 'https://api.amfoss.in/?'
+    url = 'https://10.113.8.108/?'
     mutation = '''
     mutation logAttendance($username: String!, $password: String!, $list: [String]) {
         LogAttendance(username: $username, password: $password, list: $list)
