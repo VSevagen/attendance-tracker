@@ -23,7 +23,7 @@ if [[ "$machine" = "Mac" ]];then
     # Store configuration files
     mkdir ~/.amFOSS
     cp -r ./ ~/.amFOSS
-    chmod +x ~/.amFOSS/config ~/.amFOSS/attendance.py ~/.amFOSS/get_bssid_names.sh
+    chmod +x ~/.amFOSS/config ~/.amFOSS/attendance.py ~/.amFOSS/get_ssid_names.sh
 
     # Add a new cron-job
     # write out current crontab
@@ -55,7 +55,7 @@ else
     sudo rm /opt/attendance/ -rf
     sudo mkdir /opt/attendance
     sudo cp ./attendance/* -r /opt/attendance/
-    sudo chmod +x /opt/attendance/config /opt/attendance/attendance.py /opt/attendance/get_bssid_names.sh
+    sudo chmod +x /opt/attendance/config /opt/attendance/attendance.py /opt/attendance/get_ssid_names.sh
 
     # Add a new cron-job
     # write out current crontab
